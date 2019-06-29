@@ -10,7 +10,7 @@ editor.
 
 ## Installation
 
-Only lastest stable version of Kakoune is supported.
+Only last stable version of Kakoune is supported.
 
 ### Using [plug.kak]
 
@@ -25,6 +25,10 @@ plug "TeddyDD/kakoune-pixilang" %{
 Source `rc/pixilang.kak` from your `kakrc`
 
 ## Changelog
+
+- 0.1 2019-06-29:
+    - **Kakoune v2019.01.20**
+    - **Pixilang 3.7b**
 
 [Pixilang]: http://www.warmplace.ru/soft/pixilang/
 [Kakoune]: https://kakoune.org/
