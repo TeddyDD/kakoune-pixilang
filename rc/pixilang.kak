@@ -48,7 +48,7 @@ add-highlighter shared/pixilang/double_string region '"' (?<!\\)(\\\\)*" fill st
 add-highlighter shared/pixilang/comment_line region '//' $ fill comment
 add-highlighter shared/pixilang/code/locals regex "\$\w+" 0:variable
 add-highlighter shared/pixilang/code/operators regex '%|/|div|\*|\+|-|>>|<<|==?|!=|<|>|<=|>=|\||\^|&|\|\||&&' 0:operator
-add-highlighter shared/pixilang/code/numbers regex '\b([0#][xb]?)?[\dA-F]+(\.?\d+)?' 0:value
+add-highlighter shared/pixilang/code/numbers regex '\b([0#][xb]?)?[\dA-F]+(\.?\d+)?\b' 0:value
 add-highlighter shared/pixilang/code/labels regex '^\w+:' 0:module
 
 evaluate-commands %sh{
