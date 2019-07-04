@@ -29,6 +29,9 @@ Source `rc/pixilang.kak` from your `kakrc`
 - 0.1 2019-06-29:
     - **Kakoune v2019.01.20**
     - **Pixilang 3.7b**
+- master:
+    - **Kakoune v2019.07.01**
+    - __CHANGE__ use modules
 
 [Pixilang]: http://www.warmplace.ru/soft/pixilang/
 [Kakoune]: https://kakoune.org/
