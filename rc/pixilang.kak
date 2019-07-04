@@ -12,6 +12,7 @@ hook global BufCreate .*\.pixi$ %{
 # ‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 
 hook global WinSetOption filetype=pixilang %{
+    require-module pixilang
     set-option window comment_line '//'
     set-option window static_words %opt{pixilang_static_words}
 
@@ -35,6 +36,8 @@ hook -group pixilang-highlight global WinSetOption filetype=pixilang %{
 # ‾‾‾‾‾‾‾
 
 declare-option -docstring 'Path to Pixilang executabe' str pixilang_path 'pixilang' 
+
+provide-module pixilang %§
 
 # Highlighters
 # ‾‾‾‾‾‾‾‾‾‾‾‾
@@ -184,3 +187,5 @@ define-command pixilang-run %{
 		( "$kak_opt_pixilang_path" "$file" ) </dev/null >/dev/null 2>&1 &
 	}
 }
+
+§ # module pixilang ------
